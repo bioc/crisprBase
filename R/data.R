@@ -110,6 +110,22 @@
 "CasRx"
 
 
+#' Csm CrisprNuclease object
+#'
+#' CrisprNuclease object for the RNA-targeting
+#'     Csm complex from Streptococcus thermophilus 
+#' 
+#' @format CrisprNuclease object.
+#' @details The specific Csm complex is an RNA-targeting nuclease derived from 
+#'     Streptococcus thermophilus. There is no preferred PAM sequences,
+#'     and the default (optimal) spacer length is 32nt. 
+#'     See \url{https://doi.org/10.1038/s41587-022-01649-9}.
+#' @usage data(Csm, package="crisprBase")
+"Csm"
+
+
+
+
 #' BE4max BaseEditor object
 #'
 #' BaseEditor for the cytosine base editor CRISPR/Cas9 system

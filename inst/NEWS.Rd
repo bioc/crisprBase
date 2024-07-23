@@ -3,6 +3,10 @@
 \encoding{UTF-8}
 
 
+\section{Version 1.9.1}{\itemize{
+\item Added Csm complex RNA-targeting nuclease.
+}}
+
 \section{Version 1.7.1}{\itemize{
 \item Updated weights in the SaCas9 nuclease.
 }}

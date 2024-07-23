@@ -29,6 +29,14 @@ AsCas12a <- CrisprNuclease("AsCas12a",
                            pam_side="5prime",
                            spacer_length=23)
 
+MAD7 <- CrisprNuclease("MAD7",
+                       pams="YTTV(18/23)",
+                       metadata=list(description="MAD7 nuclease (Cas12a-like family)."),
+                       pam_side="5prime",
+                       spacer_length=23)
+
+
+### RNA-targeting nucleases:
 CasRx <- CrisprNuclease("CasRx",
                         targetType="RNA",
                         pams="N",
@@ -37,11 +45,16 @@ CasRx <- CrisprNuclease("CasRx",
                         pam_side="3prime",
                         spacer_length=23)
 
-MAD7 <- CrisprNuclease("MAD7",
-                       pams="YTTV(18/23)",
-                       metadata=list(description="MAD7 nuclease (Cas12a-like family)."),
-                       pam_side="5prime",
-                       spacer_length=23)
+Csm <- CrisprNuclease("Csm",
+                      targetType="RNA",
+                      pams="N",
+                      metadata=list(description="RNA-targeting Csm complex from Streptococcus thermophilus",
+                                    doi="10.1038/s41587-022-01649-9"),
+                      pam_side="3prime",
+                      spacer_length=32)
+
+
+
 
 
 
@@ -79,6 +92,7 @@ use_data(SpCas9,
          enAsCas12a,
          MAD7,
          CasRx,
+         Csm,
          BE4max,
          compress="xz", internal=FALSE, overwrite=TRUE)
 

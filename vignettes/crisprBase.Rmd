@@ -492,9 +492,9 @@ nickase.
 
 # RNA-targeting nucleases
 
-RNA-targeting CRISPR nucleases, such as the Cas13 family of nucleases,
-target single-stranded RNA (ssRNA) instead of dsDNA as the name suggests. 
-The equivalent of the PAM sequence is called
+RNA-targeting CRISPR nucleases, such as the Cas13 family of nucleases and Csm
+complexes, target single-stranded RNA (ssRNA) instead of dsDNA as the 
+name suggests.The equivalent of the PAM sequence is called
 Protospacer Flanking Sequence (PFS). 
 
 For RNA-targeting CRISPR nucleases, the spacer sequence is 
@@ -517,6 +517,8 @@ CasRx <- CrisprNuclease("CasRx",
                         spacer_length=23)
 CasRx
 ```
+
+The `CasRx` and `Csm` nucleases are readily available in `crisprBase`. 
 
 # Additional notes
 
